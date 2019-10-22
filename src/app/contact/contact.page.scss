@@ -1,0 +1,33 @@
+ion-content{
+    border: 1.5px  solid green;
+}
+.md ion-list{
+    padding-top: 0px;
+}
+ion-item{
+    --inner-padding-end: 0px;
+    --padding-start: 0px;
+}
+.md ion-text{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; 
+    font-size:9pt; 
+    color:rgb(58, 58, 58);
+    text-align: center;
+    line-height: 1.5;
+    margin-top:10px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.ios ion-text{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; 
+    font-size:12pt; 
+    color:rgb(58, 58, 58);
+    text-align: center;
+    line-height: 1.5;
+    margin-top:10px;
+
+}
+
+a {
+    text-decoration: none;
+}

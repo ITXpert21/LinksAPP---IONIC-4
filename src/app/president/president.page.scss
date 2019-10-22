@@ -1,0 +1,25 @@
+ion-content{
+    border: 1.5px  solid green;
+}
+ion-item{
+    --inner-padding-end: 0px;
+    --padding-start: 0px;
+}
+.president-text{
+    padding:20px 20px 20px 20px;
+    color: rgb(68, 71, 70);
+    font-family: 'Gabriola';
+    font-size:18pt;
+    line-height: 1.6;
+    background-color: rgb(224, 245, 232);
+    text-align: justify;
+}
+.header-text{
+    font-family:'Times New Roman', Times, serif;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 31pt;
+    margin:15px 15px 15px 15px;
+    
+
+}

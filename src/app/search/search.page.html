@@ -1,0 +1,50 @@
+<ion-header>
+    <ion-toolbar>
+      <ion-buttons slot="start">
+        <ion-menu-button></ion-menu-button>
+      </ion-buttons>
+      <ion-title>
+        Member Search
+      </ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+<ion-content padding>
+  <ion-list>
+    <ion-item>
+      <ion-input placeholder="Last Name"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-select placeholder="Please Select Area.." >
+        <ion-select-option value="Eastern Area">Eastern Area</ion-select-option>
+        <ion-select-option value="m">Male</ion-select-option>
+      </ion-select>
+    </ion-item>  
+    
+    <ion-item>
+      <ion-input placeholder="Chapter"></ion-input>
+    </ion-item>  
+    <ion-item lines="none">
+      <button ion-button (click)="openMemberSearch()" style="width: 100%; height:40px; background-color:green; color:white;"><strong>Member Search</strong></button>
+    </ion-item>
+  </ion-list>
+  <ion-list>
+    <ion-item>
+      <strong>Results</strong>
+    </ion-item>
+    <ion-item *ngFor="let memebers of memebers">
+      <div style="line-height: 1.7; font-size:11pt; font-family:'Times New Roman', Times, serif; margin: 10px 0px 10px 0px;">
+
+      {{memebers.Prefix}} {{memebers.first_name}} {{memebers.last_name}} {{memebers.designation}}<br/>
+      {{memebers.address1}}<br/>
+    <!-- {{memebers.address2}}<br/>--> 
+      {{memebers.city}} {{memebers.state-providence}} {{memebers.zipcode}} {{memebers.country}}<br/>
+      HomePhone: {{memebers.homephone}}<br/>
+      WorkPhone: {{memebers.workphone}}<br/>
+      MobilePhone: {{memebers.tollphone}}<br/>
+      Email: {{memebers.Email}}<br/>
+      Area / Chapter: {{memebers.area_name}} / {{memebers.chapter_name}}
+    </div>
+    </ion-item>
+  </ion-list>
+</ion-content>

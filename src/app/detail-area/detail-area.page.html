@@ -1,0 +1,30 @@
+<ion-header>
+    <ion-toolbar>
+      <ion-buttons slot="start">
+          <ion-back-button></ion-back-button>
+      </ion-buttons>
+      <ion-title>
+          {{title}}
+      </ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+<ion-content>
+  <ion-list>
+    <ion-item lines="none">
+        <div id="outerbox" class="bg_img" style=" overflow: auto; max-width: 100%; max-height: 300px;">
+            <img id="innerbox" class="center-img" src="../../assets/imgs/{{imgName}}" style="max-width:1867px;">
+        </div>
+    </ion-item>
+  <ion-item lines="none">
+      <div class="description">{{description}}</div>
+  </ion-item>
+      <div class="director-title">Area Director</div>
+      <div class="director-content" > {{director}} <br/>Chapter:<br/>
+        Email:<a href="mailto:{{email}}">&nbsp;{{email}}</a></div>
+  
+      <div class="director-title">Website:</div>
+      <div class="director-content" ><a (click)="gotoWebsite(website);">&nbsp;{{website}}</a></div>
+
+  </ion-list>
+</ion-content>

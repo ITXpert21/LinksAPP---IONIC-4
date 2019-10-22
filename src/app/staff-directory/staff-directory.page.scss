@@ -1,0 +1,35 @@
+
+ion-content{
+    border: 1.5px  solid green;
+    --ion-background-color: rgb(224, 245, 232);
+
+}
+.staff-text{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    line-height: 1.2;
+   
+}
+.staff-title{
+    padding: 10px 10px 10px 15px; 
+
+    margin-block-start: 0em; 
+    margin-block-end: 0em;
+    margin-top:15px;
+    width:100%;
+    background-color: green;
+    color: white;
+    font-size: 12pt;
+
+}
+.staff-content-header{
+    color: rgb(44, 43, 43);
+    padding: 20px 10px 0px 20px; 
+    font-weight: bold;
+    font-size: 12pt;
+
+}
+.staff-content{
+    padding: 0px 0px 0px 20px; 
+    color: rgb(44, 43, 43);
+    font-size: 12pt;
+}

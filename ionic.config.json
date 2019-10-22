@@ -1,0 +1,7 @@
+{
+  "name": "linksapp",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}

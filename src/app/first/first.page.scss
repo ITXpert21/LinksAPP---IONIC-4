@@ -1,0 +1,40 @@
+ion-content{
+    --background: #fff url('../../assets/imgs/bg.png') no-repeat center center/cover;
+}
+
+ion-item{
+  --ion-background-color:none;
+}
+.button {
+  background-color: Transparent;; /* Green */
+  border: none;
+  color: white;
+  padding: 10px 25px 10px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14pt;
+  margin: 10px 2px;
+  cursor: pointer;
+  
+}
+
+.button1 {
+  color: white; 
+  border: 1px solid white;
+}
+.button1:hover {
+  background-color: #4CAF50;
+  border: 1px solid white;
+  color: white;
+}
+.app-title {
+  color: #fff;
+  font-family: 'Gabriola';
+  font-size: 52pt;
+  width: 100%;
+  height:100%;
+  text-align: center;
+}
+
+  

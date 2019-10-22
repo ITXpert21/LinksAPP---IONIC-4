@@ -1,0 +1,30 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>
+      Home
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <ion-grid>
+        <ion-row>
+          <ion-col  style="padding: 50px 50px 50px 50px;">
+            <ion-img src="../../assets/imgs/logo.png" class="img-logo"></ion-img>       
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    
+  <div style="width:100%; text-align:center; margin-top:20px;" *ngIf="showCalendar">
+    <div class="title">2019 CALENDAR EVENTS</div>
+    <div class="content">45th Eastern Area Conference<br/>Atlantic City, NJ<br/>April 24-28, 2019</div>
+    <div class="content">45th Southern Area Conference<br/>Orlando, FL<br/>May 1-5, 2019</div>
+    <div class="content">45th Western Area Conference<br/>Austin, TX<br/>June 5-9, 2019</div>
+    <div class="content">45th Central Area Conference<br/>Nashville, TN<br/>July 31- Aug 4, 2019</div>
+    <div class="content">2019 Legislative Luncheon<br/>Wasington, DC<br/>Sept. 12, 2019</div>
+    <div class="content">2019 Leadership Summit<br/>Columbus, OH<br/>Oct. 31-Nov 2, 2019</div>
+  </div>
+</ion-content>

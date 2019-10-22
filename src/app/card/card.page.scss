@@ -1,0 +1,60 @@
+
+ion-content{
+    border: 1.5px  solid green;
+}/*
+ion-item{
+    --ion-item-background: #fff url('../../assets/imgs/ID_Card_Fd.jpg') no-repeat center center/cover;
+
+    --inner-padding-end: 0px;
+    --padding-start: 0px;
+    --min-height:300px;
+}*/
+
+img{
+  width:100%;
+  height:100%;
+}
+
+.myCard{
+  position:relative;
+
+}
+
+.myOverlay{
+  //width: 100%;
+  //height: 60px;
+  position: absolute;
+  z-index: 99;
+  //bottom: 0px;
+  //opacity: 0.5;
+  //background: #000;
+  color: #000;
+  left: 3.5%;
+  bottom: 20%;
+  font-size: 85%;
+}
+
+.myOverlaySince{
+  //width: 100%;
+  //height: 50px;
+  position: absolute;
+  z-index: 99;
+  //opacity: 0.5;
+  //background: #000;
+  color: #000;
+  text-align: right;
+  bottom: 30%;
+  right: 5.5%;
+  font-size: 90%;
+  //
+  //.member-since{
+  //  font-size: 20px;
+  //  font-weight: 600;
+  //}
+
+}
+
+@media only screen and (min-width: 768px) {
+  .myOverlay{ font-size: 18pt !important;}
+  .myOverlaySince{ font-size: 18pt !important; }
+}

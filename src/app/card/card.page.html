@@ -1,0 +1,27 @@
+<ion-header>
+    <ion-toolbar>
+      <ion-buttons slot="start">
+          <ion-back-button></ion-back-button>
+      </ion-buttons>
+      <ion-title>
+          Membership Card
+      </ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+<ion-content>
+  <!--<ion-item lines="none">-->
+  <!--</ion-item>-->
+    <pinch-zoom>
+    <div class="myCard" style="width:90%; height: auto; margin: 50% auto;">
+        <ion-img src="../assets/imgs/ID_Card_Fd.jpg" ></ion-img>
+        <div class="myOverlay">
+            <div class="member-name">{{FIRST_NAME}} {{LAST_NAME}}</div>
+            <div class="member-no">{{ID}}</div>
+        </div>
+        <div class="myOverlaySince">
+            <div class="member-since">{{D_INDUCTION_YEAR}}</div>
+        </div>
+    </div>
+    </pinch-zoom>
+</ion-content>

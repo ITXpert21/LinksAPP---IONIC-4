@@ -1,0 +1,23 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+        <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title >Log in</ion-title>
+
+  </ion-toolbar>
+</ion-header>
+
+<ion-content >
+    <ion-item>
+        <ion-input placeholder="User name*" [(ngModel)]="username" (ionInput)="inputUsername();"></ion-input>
+    </ion-item>
+    <ion-item>
+        <ion-input type="password" placeholder="Password*" [(ngModel)]="password" (ionInput)="inutPwd();"></ion-input>
+    </ion-item>
+    <div *ngIf="failed" style="color: red; width: 100%; text-align: center;">Please insert login information correctly.</div>
+    <div style="width: 100%; text-align: center;"><img *ngIf="loading" src="data:image/gif;base64,R0lGODlhEAAQAPIAAP///wAAAMLCwkJCQgAAAGJiYoKCgpKSkiH/C05FVFNDQVBFMi4wAwEAAAAh/hpDcmVhdGVkIHdpdGggYWpheGxvYWQuaW5mbwAh+QQJCgAAACwAAAAAEAAQAAADMwi63P4wyklrE2MIOggZnAdOmGYJRbExwroUmcG2LmDEwnHQLVsYOd2mBzkYDAdKa+dIAAAh+QQJCgAAACwAAAAAEAAQAAADNAi63P5OjCEgG4QMu7DmikRxQlFUYDEZIGBMRVsaqHwctXXf7WEYB4Ag1xjihkMZsiUkKhIAIfkECQoAAAAsAAAAABAAEAAAAzYIujIjK8pByJDMlFYvBoVjHA70GU7xSUJhmKtwHPAKzLO9HMaoKwJZ7Rf8AYPDDzKpZBqfvwQAIfkECQoAAAAsAAAAABAAEAAAAzMIumIlK8oyhpHsnFZfhYumCYUhDAQxRIdhHBGqRoKw0R8DYlJd8z0fMDgsGo/IpHI5TAAAIfkECQoAAAAsAAAAABAAEAAAAzIIunInK0rnZBTwGPNMgQwmdsNgXGJUlIWEuR5oWUIpz8pAEAMe6TwfwyYsGo/IpFKSAAAh+QQJCgAAACwAAAAAEAAQAAADMwi6IMKQORfjdOe82p4wGccc4CEuQradylesojEMBgsUc2G7sDX3lQGBMLAJibufbSlKAAAh+QQJCgAAACwAAAAAEAAQAAADMgi63P7wCRHZnFVdmgHu2nFwlWCI3WGc3TSWhUFGxTAUkGCbtgENBMJAEJsxgMLWzpEAACH5BAkKAAAALAAAAAAQABAAAAMyCLrc/jDKSatlQtScKdceCAjDII7HcQ4EMTCpyrCuUBjCYRgHVtqlAiB1YhiCnlsRkAAAOwAAAAAAAAAAAA==" /></div>
+    <div style="padding: 15px 15px 15px 15px; "><button  (click)="Login()" style="width: 100%; height:40px; background-color:green; color:white; font-size:18pt;">Log in</button></div>
+<!--
+    <ion-button color="success" expand="block" style="width:80%; margin-left:10%;" (click)="gotoRegist();">Log in</ion-button>-->
+  </ion-content>

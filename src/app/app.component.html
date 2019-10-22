@@ -1,0 +1,39 @@
+<ion-app>
+  <ion-split-pane>
+    <ion-menu menuId="visitor">
+        <div style="width:100%; height:170px; padding: 15px 15px 15px 15px; background-color:#006844;">
+          <ion-img src="../assets/imgs/logo.png" ></ion-img>
+        </div>
+      <ion-content>
+        <ion-list>
+          <ion-menu-toggle auto-hide="false" *ngFor="let p of appPages_visitor">
+            <ion-item [routerDirection]="'root'" [routerLink]="[p.url]">
+              <ion-icon slot="start" [name]="p.icon"></ion-icon>
+              <ion-label>
+                {{p.title}}
+              </ion-label>
+            </ion-item>
+          </ion-menu-toggle>
+        </ion-list>
+      </ion-content>
+    </ion-menu>
+    <ion-menu menuId="member">
+        <div style="width:100%; height:170px; padding: 15px 15px 15px 15px; background-color:green;">
+          <ion-img src="../assets/imgs/logo.png" ></ion-img>
+        </div>
+      <ion-content>
+        <ion-list>
+          <ion-menu-toggle auto-hide="false" *ngFor="let p of appPages_member">
+            <ion-item [routerDirection]="'root'" [routerLink]="[p.url]">
+              <ion-icon slot="start" [name]="p.icon"></ion-icon>
+              <ion-label>
+                {{p.title}}
+              </ion-label>
+            </ion-item>
+          </ion-menu-toggle>
+        </ion-list>
+      </ion-content>
+    </ion-menu>
+    <ion-router-outlet main></ion-router-outlet>
+  </ion-split-pane>
+</ion-app>

@@ -1,0 +1,35 @@
+<ion-header>
+    <ion-toolbar>
+      <ion-row>
+        <ion-col size="2" (click)="goBack();">
+          <ion-icon name="arrow-round-back" size="large"></ion-icon>
+        </ion-col>
+        <ion-col align-self-center>
+          <ion-title >Join our Program</ion-title>
+        </ion-col>
+      </ion-row>
+    </ion-toolbar>
+  </ion-header>
+
+<ion-content padding>
+  <ion-item>
+      <ion-input placeholder="First Name"></ion-input>
+  </ion-item>
+  <ion-item>
+      <ion-input placeholder="Last Name"></ion-input>
+  </ion-item>
+  <ion-item>
+      <ion-input placeholder="Email"></ion-input>
+  </ion-item>
+  <ion-item>
+      <ion-input placeholder="Password" password></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label>Gender</ion-label>
+    <ion-select placeholder="Select One">
+      <ion-select-option value="f">Female</ion-select-option>
+      <ion-select-option value="m">Male</ion-select-option>
+    </ion-select>
+  </ion-item>
+  <ion-button color="success" expand="block" style="width:80%; margin-left:10%;" (click)="gotoLogin();">Regist</ion-button>
+</ion-content>

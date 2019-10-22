@@ -1,0 +1,26 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>
+      Vendors
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <ion-item>
+      <ion-text style="margin-top: 10px; font-size: 14pt;"><strong>Certified Brand Licensed Vendors</strong><p class="header-text">(Effective 04/30/19)</p></ion-text>
+    </ion-item>
+    <ion-item lines="none" *ngFor="let vendor of vendors">
+      <p style="margin-block-start: 0.2em; line-height: 1.5; font-family:'Times New Roman'; padding-left: 5px; font-size:11pt;"><strong>{{vendor.business_name}}</strong><br/>
+          {{vendor.first_name}} {{vendor.last_name}}<br/>
+          {{vendor.address}}<br/>
+          {{vendor.city}} {{vendor.state}} {{vendor.zip}}<br/>
+          Phone:  {{vendor.phone}}<br/>
+          Email:  <a href="mailto:{{vendor.email}}">{{vendor.email}}</a><br/>
+          Website: <a (click)="gotoWebsite(vendor.website);">{{vendor.website}}</a><br/>
+      </p>
+    </ion-item>
+</ion-content>
